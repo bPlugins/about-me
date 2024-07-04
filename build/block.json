@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/about-me",
+  "version": "0.1.0",
+  "title": "About Me (Abu Hayat)",
+  "category": "widgets",
+  "description": "Learn more about `Abu Hayat`",
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": "Abu Hayat"
+    },
+    "image": {
+      "type": "object",
+      "default": {
+        "id": null,
+        "url": null
+      }
+    },
+    "age": {
+      "type": "number",
+      "default": 30
+    },
+    "jobTitle": {
+      "type": "string",
+      "default": "Web Developer"
+    },
+    "about": {
+      "type": "string",
+      "default": "I am a web developer with 10 years of experience in web development. I love to code and build web applications."
+    },
+    "socials": {
+      "type": "array",
+      "default": [
+        {
+          "text": "facebook",
+          "url": "https://www.facebook.com"
+        },
+        {
+          "text": "twitter",
+          "url": "https://www.twitter.com"
+        },
+        {
+          "text": "instagram",
+          "url": "https://www.instagram.com"
+        }
+      ]
+    }
+  },
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "about-me",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": [
+    "file:./view.js",
+    "react",
+    "react-dom"
+  ]
+}
